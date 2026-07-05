@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <style>
-        .container{
-            display:grid;
+        .container {
+            display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: 30px repeat(6, 80px);
             gap: 10px;
         }
-        .day, .day-name{
+
+        .day,
+        .day-name {
             background-color: #f6d6d6;
             /* height: 50px; */
             /* width: 50px; */
@@ -21,13 +24,19 @@
             align-items: center;
             border-radius: 10px;
         }
-        .day-name{
+
+        .day-name {
             font-size: 1rem;
             /* height: 30px; */
             background-color: #d6e4f6;
         }
+
+        .otherMonth {
+            color: gray;
+        }
     </style>
 </head>
+
 <body>
     <!-- .container>div*35{$} -->
     <div class="container">
@@ -39,9 +48,9 @@
         <div class="day-name">F</div>
         <div class="day-name">S</div>
 
-        <div class="day">28</div>
-        <div class="day">29</div>
-        <div class="day">30</div>
+        <div class="day otherMonth">28</div>
+        <div class="day otherMonth">29</div>
+        <div class="day otherMonth">30</div>
         <div class="day">1</div>
         <div class="day">2</div>
         <div class="day">3</div>
@@ -73,7 +82,8 @@
         <div class="day">29</div>
         <div class="day">30</div>
         <div class="day">31</div>
-        <div class="day">1</div>
+        <div class="day otherMonth">1</div>
     </div>
 </body>
+
 </html>
